@@ -1,0 +1,174 @@
+@import "./colorValues";
+@import "./textvalues";
+
+.global{
+    @mixin textarea {
+        color: $primary-coloe;
+    }
+    .head{
+        color: $danger;
+    }
+    p{
+        @include textarea;
+        span{
+             background-color: orange
+        }
+    }
+}
+.global h1 {
+    background-color: orange !important;
+}
+
+.topcard{
+    margin-top: -170px;
+    border: 2px solid $white-color;
+    background-color: $white-color;
+    height: 250px;
+    max-width:300px;
+    
+    div {
+        background-color:$primary;
+        height: 100px;
+        width: 100px; 
+        img {
+            margin-left: -31px;
+            margin-top: -32px;
+        }
+    }
+}
+#mocks{
+    h1 {
+        font-family:$family;
+        font-size: $hsize;
+        font-weight: $weight;
+        color: $black-color;
+    }
+    .shirt {
+            top:-329px;
+            right:80px;
+    }
+    .bgborder{
+        border: 25px solid $white-color;
+        border-radius: 50%;
+        width: 370px;
+        height: 370px;
+        margin-top: -264px;
+        position: relative;
+        right: 145px;
+    }
+    .book{
+        margin-top: -7px;
+        right: 19px;
+        // background-position: $initial;
+       }
+     .bgborder1{
+        border: 25px solid $bgcolor;
+        border-radius: 50%;
+        width: 119px;
+        height: 119px;
+        margin-top: -23%;
+        margin-left: 23%;
+     }  
+    .bground{
+        width: 228px;
+        height: 228px;
+        border: 2px solid $primary;
+        border-radius: 50%;
+        float: right;
+        background-color:$primary;
+        margin-right: 314px;
+    }
+}
+.textcontent{ 
+    p{
+        position: relative;
+        top: 76px;
+        text-align: justify;
+        font-family: $pfont-family;
+        font-size: $psize;
+        font-weight:$pweight;
+        line-height:$pline-height;
+        left:68px;
+    }
+    .v-btn{
+        color:$black-color;
+        font-size: $bsize;
+        letter-spacing:$bletterspacing;
+        font-weight:$weight;
+        font-family:$pfont-family;
+    } 
+}
+.bg1{
+    background-color: blue
+}
+#project{
+  .v-card {
+      @extend #mocks,h1 
+  }
+  h5{
+    font-size:$h5size;
+    font-weight:$h5weight;
+    line-height:$h5lineheight;
+    color:$black-color;
+  }
+  p{
+    font-weight:$pweight;
+    line-height:$pline-height;
+    font-family: $pfont-family; 
+    color:$black-color;
+    font-size: 1rem;
+   
+  }
+  img{
+      margin: -40px;
+  }
+  .v-item-group{
+      padding: 218px;
+      top:-190px;
+  }
+    .design{
+        background-color: $primary;
+            .v-image{
+                top: -59px;
+            }
+    }
+    .v-btn {
+        span{
+            font-family:$family;
+            font-weight:$weight;
+            letter-spacing:$sletterspacing;
+            font-size:$psize;
+        }
+    }
+}
+.company{
+    p {
+        line-height: 2.2rem;
+        font-size:$psize;
+        font-family:$pfont-family;  
+    }
+    @extend #mocks,h1 
+
+   
+}
+#user{
+    min-height: 900px;
+    // position: relative;
+
+    .webcard {
+        border: 2px solid #ffff;
+        background-color: #ffff;
+        height: 430px;
+        position: absolute;
+        width: 300px;
+    }
+    .web{
+        margin: 17rem;
+            @extend .company,p
+
+    }
+}
+.bottomBar{
+    margin: -12rem;
+}
+

@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import welCome from '@/components/welCome'
+import mockUp from '@/components/mockUp'
+import projectCard from '@/components/projectCard'
+import bottomBar from '@/components/bottomBar'
+import companyCard from '@/components/companyCard'
+import protoInfo from '@/components/protoInfo'
+import userWeb from '@/components/userWeb'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +15,37 @@ const routes = [
     name: 'welCome',
     component: welCome
   },
+  {
+    path: '/mockUp',
+    name: 'mockUp',
+    component: mockUp
+  },
+  {
+    path: '/projectCard',
+    name: 'projectCard',
+    component: projectCard
+  },
+  {
+    path:'/bottomBar',
+    name:'bottomBar',
+    components:bottomBar
+  },
+  {
+    path:'/companyCard',
+    name:'companyCard',
+    components:companyCard
+  },
+  {
+    path:'/protoInfo',
+    name:'protoInfo',
+    components:protoInfo
+  },
+  {
+    path:'/userWeb',
+    name:'userWeb',
+    components:userWeb
+  }
+  
  
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
