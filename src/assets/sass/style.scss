@@ -171,4 +171,26 @@
 .bottomBar{
     margin: -12rem;
 }
+#proto {
+    .bag{
+        top: -20rem;
+    right: 3rem;
+    }
+    .whiteborder{
+        border: 25px solid #ffff;
+        border-radius: 50%;
+        width: 370px;
+        height: 370px;
+        margin-top: -18rem;
+        position: relative;
+        right: -29rem;
+    }
+    .protocircle{
+        width: 174px;
+        height: 174px;
+        background-color:$primary;
+    }
+    @extend #mocks,h1,.company,p
+   
+}
 

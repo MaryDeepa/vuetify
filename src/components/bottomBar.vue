@@ -36,15 +36,21 @@
             </v-row>
         </v-container>
     </div>
+    
     <v-footer padless class="grey darken-3">
-        <v-col class="text-center " v-for="n in 3" :key="n" cols="12" sm="4">
-            <h3 class="white--text my-10">Headline</h3>
-            <p class="white--text my-3">Sample footer text</p>
-        </v-col>
-        <h5 class="text-center white--text mx-auto my-12">
-            <a href="#" class="text-decoration-underline yellow--text">Website Templates</a> created with
-            <a href="#" class="text-decoration-underline yellow--text">Website Builder Software</a>.
-        </h5>
+        <v-container>
+        <v-row justify="center" no-gutters class="mx-15 pa-15" >
+            <v-col class="text-center" v-for="n in 3" :key="n" cols="12" md="4">
+                <h3 class="white--text my-10">Headline</h3>
+                <p class="white--text my-3">Sample footer text</p>
+            </v-col>
+            </v-row>
+            <h5 class="text-center white--text mx-auto my-12">
+                <a href="#" class="text-decoration-underline yellow--text">Website Templates</a> created with
+                <a href="#" class="text-decoration-underline yellow--text">Website Builder Software</a>.
+            </h5>
+                         </v-container>
+
     </v-footer>
 </div>
 </template>

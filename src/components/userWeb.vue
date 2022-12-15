@@ -1,5 +1,5 @@
 <template>
-<div class="grey lighten-5 pb-2" id="user">
+<div class="grey lighten-5 pb-5 my-16" id="user">
     <v-card color="#f6da0a" min-height="350" min-width="350">
         <v-row>
             <v-col md="4" offset-md="2">

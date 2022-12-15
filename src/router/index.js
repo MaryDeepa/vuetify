@@ -7,6 +7,8 @@ import bottomBar from '@/components/bottomBar'
 import companyCard from '@/components/companyCard'
 import protoInfo from '@/components/protoInfo'
 import userWeb from '@/components/userWeb'
+import topBar from '@/components/topBar'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -44,6 +46,11 @@ const routes = [
     path:'/userWeb',
     name:'userWeb',
     components:userWeb
+  },
+  {
+    path:'/topBar',
+    name:'topBar',
+    components:topBar
   }
   
  
